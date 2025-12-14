@@ -33,9 +33,13 @@ The website layout adapts to different screen sizes using flexible layouts and C
 - Managing assets and deployment using GitHub Pages
 
 ## ⚠️ Disclaimer
-This project is created solely for educational purposes to learn and practice frontend web development.  
-All trademarks, logos, and brand names (if any) belong to their respective owners.  
-This project is not affiliated with or endorsed by any company.
+This project is created solely for educational and learning purposes to understand frontend web development and UI design.
+
+The MSI name and logo are used in this project only for demonstration as part of a UI study.  
+All trademarks, logos, and brand names belong to their respective owners.
+
+This project is not intended for commercial use and is not affiliated with, sponsored by, or endorsed by MSI.
+
 
 ## 🚀 Deployment
 This project is hosted using **GitHub Pages**.
