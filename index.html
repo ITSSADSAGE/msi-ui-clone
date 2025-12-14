@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CHANGE TITLE LOCALLY -->
+  <title>MSI | Official Website UI Clone</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #0b0b0b;
+      color: #ffffff;
+    }
+
+    /* NAVBAR */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #000;
+      padding: 14px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 28px;
+    }
+
+    .logo span {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e60012;
+    }
+
+    /* HERO */
+     .hero {
+     height: 90vh;
+     display: flex;
+      align-items: center;
+      padding: 0 80px;
+
+  /* BACKGROUND IMAGE */
+       background:
+      linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.6)
+      ),
+      url("background1.png");
+
+      background-size: cover;
+      background-position: center right;
+      background-repeat: no-repeat;
+    }
+
+
+    .hero-content {
+      max-width: 650px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h1 span {
+      color: #e60012;
+    }
+
+    .hero-content p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .hero-content button {
+      padding: 14px 32px;
+      background: #e60012;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .hero-content button:hover {
+      background: #ff1a2d;
+      transform: scale(1.05);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 60px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /* PRODUCT GRID */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #111;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(230, 0, 18, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #e60012;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      padding: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    .disclaimer {
+      margin-top: 10px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">
+      <img src="MSILOGO.jpg" alt="Brand Logo">
+      <span>MSI</span>
+    </div>
+
+    <nav>
+      <a href="#">Products</a>
+      <a href="#">Gaming</a>
+      <a href="#">Business</a>
+      <a href="#">Support</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Power Meets <span>Performance</span></h1>
+      <p>
+        Discover high-performance laptops, gaming desktops, and cutting-edge
+        technology designed for gamers, creators, and professionals.
+      </p>
+      <button>Explore Products</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <h2>Featured Products</h2>
+
+    <div class="products">
+      <div class="card">
+        <img src="glaptop.jpg">
+        <h3>Gaming Series Laptop</h3>
+        <p>High refresh rate display with powerful graphics and advanced cooling.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="card">
+        <img src="laptop.jpg">
+        <h3>Creator Series Laptop</h3>
+        <p>Designed for creators with accurate colors and professional performance.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="card">
+        <img src="desktop.jpeg">
+        <h3>Desktop Gaming PC</h3>
+        <p>Desktop-level performance built for extreme gaming and multitasking.</p>
+        <a href="#">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 MSI. All rights reserved.
+    <div class="disclaimer">
+      Disclaimer: This website UI is recreated solely for educational purposes to
+      learn and understand web development. All trademarks, logos, and brand names
+      belong to their respective owners.
+    </div>
+  </footer>
+
+</body>
+</html>
