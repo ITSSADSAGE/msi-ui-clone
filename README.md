@@ -10,9 +10,6 @@ The project recreates the look and feel of a modern gaming homepage and is inten
 
 ## 🛠 Technologies Used
 - HTML5
-- CSS3
-- Flexbox
-- CSS Grid
 
 ## ✨ Features
 - Dark-themed gaming UI
