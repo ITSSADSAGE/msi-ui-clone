@@ -1,68 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MSI | Gaming</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #0b0b0b;
+      color: #ffffff;
+    }
+
+    /* NAVBAR */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #000;
+      padding: 14px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 28px;
+    }
+
+    .logo span {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e60012;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 80px 60px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+      color: #ccc;
+    }
+
+    .game-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .game-list li {
+      margin: 12px 0;
+      font-size: 16px;
+      color: #bbb;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      padding: 30px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    .disclaimer {
+      margin-top: 10px;
+      color: #999;
+    }
+  </style>
 </head>
-<body style="background-color:black; color:white; font-family:Arial;">
+
+<body>
 
   <!-- NAVBAR -->
-  <h1 style="background-color:#111; padding:10px; text-align:center;">
-    <img src="MSILOGO.jpg" alt="MSI Logo" style="height:30px; vertical-align:middle;">
-    MSI Website
-  </h1>
+  <header>
+    <div class="logo">
+      <img src="MSILOGO.jpg" alt="Brand Logo">
+      <span>MSI</span>
+    </div>
 
-  <p style="text-align:center;">
-    <a href="products.html" style="color:white; margin:10px;">Products</a>
-    <a href="gaming.html" style="color:white; margin:10px;">Gaming</a>
-    <a href="support.html" style="color:white; margin:10px;">Support</a>
-    <a href="about.html" style="color:white; margin:10px;">About Us</a>
-  </p>
+    <nav>
+      <a href="products.html">Products</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="support.html">Support</a>
+      <a href="about.html">About us</a>
+    </nav>
+  </header>
 
-  <!-- GAMING SECTION -->
-  <h2 style="text-align:center;">Gaming Experience</h2>
-  <p style="text-align:center;">
-    Immerse yourself in the ultimate gaming experience with MSI's high-performance hardware.
-    From fast GPUs to precision keyboards, elevate your gameplay to new heights.
-  </p>
+  <!-- GAMING -->
+  <section class="section">
+    <h2>Gaming Experience</h2>
+    <p>Immerse yourself in the ultimate gaming experience with MSI's high-performance hardware designed for gamers. From lightning-fast GPUs to precision peripherals, elevate your gameplay to new heights.</p>
 
-  <!-- FEATURED PRODUCTS -->
-  <h2 style="text-align:center;">Featured Products</h2>
-  <ul style="list-style:none; text-align:center; padding:0;">
-    <li>
-      <img src="gpu.jpg" alt="GPU" style="width:200px;"><br>
-      <b>MSI RTX 4090</b><br>
-      Extreme performance for 4K gaming.
-    </li>
-    <br>
-    <li>
-      <img src="keyboard.jpg" alt="Keyboard" style="width:200px;"><br>
-      <b>MSI Vigor GK71</b><br>
-      Mechanical keys with RGB lighting.
-    </li>
-  </ul>
+    <ul class="game-list">
+      <li>🎮 High-end Graphics Cards for smooth 4K gaming</li>
+      <li>⌨️ Mechanical Keyboards with RGB lighting</li>
+      <li>🖱️ Precision Gaming Mice for fast response</li>
+      <li>🎧 Immersive Headsets with surround sound</li>
+    </ul>
 
-  <!-- TESTIMONIAL -->
-  <h2 style="text-align:center;">What Gamers Say</h2>
-  <p style="text-align:center; font-style:italic;">
-    "MSI gear never lets me down during matches. Solid build and great performance!"
-  </p>
-  <p style="text-align:center;">– Aryan, Gamer</p>
+    <p style="margin-top: 30px; text-align: center;">
+      Explore our products and take your setup to the next level.
+    </p>
+  </section>
 
-  <h2 style="text-align:center;">Ready to Level Up?</h2>
-  <p style="text-align:center;">
-    <a href="products.html" style="background-color:red; color:white; padding:10px; text-decoration:none;">
-      Browse Products
-    </a>
-  </p>
-  
-  <hr>
-  <p style="text-align:center; font-size:12px; color:gray;">
+  <!-- FOOTER -->
+  <footer>
     © 2025 MSI. All rights reserved.
-  </p>
-  <p style="text-align:center; font-size:12px; color:gray;">
-    Disclaimer: This website UI is recreated only for learning web development.  
-    All trademarks and logos belong to their owners.
-  </p>
+    <div class="disclaimer">
+      Disclaimer: This website UI is recreated solely for educational purposes to
+      learn and understand web development. All trademarks, logos, and brand names
+      belong to their respective owners.
+    </div>
+  </footer>
 
 </body>
 </html>
